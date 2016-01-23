@@ -3,8 +3,10 @@ Pig Latin
 chra94 -|-
 '''
 
-
-word = input('enter a word') 
-word += '-' + word[0] + 'ay'
-word = word[1:]
-print (word)
+while True:
+    word = input('enter a word (blank to quit)\n')
+    if word == '':
+        break
+    word += '-' + word[0] + 'ay'
+    word = word[1:]
+    print (word)

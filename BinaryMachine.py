@@ -14,12 +14,17 @@ def binary():
             s += 2**n
     print(s)
 
-'''
-TODO
 
 def base10():
-    binary = 0
-    base10 = input('Enter')
-    while int(base10) > 1:
-        int(base) - 1
-'''
+    binary = int(input('Enter Binary'), 2)
+    print(binary)
+
+
+while True:
+    mode = input('Enter binary or base 10 number?')
+    if mode == 'binary':
+        binary()
+    elif mode == 'base 10':
+        base10()
+    else:
+        print('Try again')

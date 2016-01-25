@@ -14,8 +14,12 @@ def binary():
             s += 2**n
     print(s)
 
+'''
+TODO
+
 def base10():
     binary = 0
     base10 = input('Enter')
     while int(base10) > 1:
-        int(base) - 1 
+        int(base) - 1
+'''

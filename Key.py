@@ -1,0 +1,51 @@
+'''
+SimpleKey 3
+Chra94 -|-
+'''
+
+from random import *
+key = ''
+letter = 'abcdefghijklmnopqrstuvwxyz'
+
+
+
+def generate():
+    global key
+    for i in range(11):
+        r = randint(1, 9)
+        key += str(r)
+        key += letter[r*2]
+    print(key)
+    
+
+def validate():
+    global letter
+    status = True
+    r = ''
+    key = input('Input key')
+    n = len(key)
+    for i in key:
+        if n % 2 == 1:          
+            if i != letter[int(r)*2]:
+                status = False
+                break
+            else:
+                pass
+            r = str(i)
+        else:
+            int(i)
+            r = i
+            
+        n -= 1
+    if not status:
+        print('fail')
+    else:
+        print('Success')
+
+
+print('SimpleKey...')
+decide = input('Generate/Validate?')
+if decide == 'Generate':
+    generate()
+elif decide == 'Validate':
+    validate()
